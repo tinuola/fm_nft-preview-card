@@ -31,8 +31,21 @@ main {
   padding: 1.5rem;
 }
 
-.card__container img {
+.card__img-container {
   border-radius: .5rem;
+  overflow: hidden;
+}
+
+.card__img-container:hover{
+  background-image: url('../assets/images/icon-view.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--cyan);
+  cursor: pointer;
+}
+
+.card__img:hover {
+  opacity: .4;
 }
 
 .card__heading {
@@ -98,7 +111,7 @@ main {
   align-items: center
 }
 
-.card__attribution-row img {
+.card__attribution-img {
   width: 40px;
   margin-right: .75rem;
   border: 1px solid var(--white);
@@ -106,14 +119,20 @@ main {
 }
 
 .card__attribution {
-  color: var(--white);
+  color: var(--light-blue);
   font-size: .875rem;
   font-weight: 300;
 }
 
 .card__attribution span {
-  color: var(--light-blue);
-  margin-right: .125rem;
+  color: var(--white);
+  margin-left: .125rem;
+}
+
+.card__heading:hover,
+.card__attribution span:hover {
+  color: var(--cyan);
+  cursor: pointer;
 }
 
 footer {
