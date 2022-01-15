@@ -14,8 +14,7 @@ body, h1, h2, h3, h4, p, ul, li {
 }
 
 /* Make images easier to work with */
-img,
-picture {
+img {
   max-width: 100%;
   display: block;
 }
