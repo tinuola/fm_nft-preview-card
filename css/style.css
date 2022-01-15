@@ -51,15 +51,38 @@ main {
   display: flex;
   justify-content: space-between;
   margin-top: 1.25rem;
+  font-size: .875rem;
 }
 
 .card__value {
   color: var(--cyan);
-  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+/*  */
+.card__value:before {
+  display: inline-flex;
+  content: '';
+  background-image: url(/assets/images/icon-ethereum.svg);
+  background-size: 10px 18px;
+  width: 10px;
+  height: 18px;
+  margin-right: .5rem;
+  position: relative;
+  top: 3px;
 }
 
 .card__timestamp {
   color: var(--light-blue);
+}
+
+/*  */
+.card__timestamp:before {
+  content: url(/assets/images/icon-clock.svg);
+  vertical-align: middle;
+  zoom: 83%;
+  margin-right: 0.25rem;
 }
 
 .card__divider {
@@ -77,13 +100,14 @@ main {
 
 .card__attribution-row img {
   width: 40px;
-  margin-right: 1rem;
+  margin-right: .75rem;
   border: 1px solid var(--white);
   border-radius: 50%;
 }
 
 .card__attribution {
   color: var(--white);
+  font-size: .875rem;
   font-weight: 300;
 }
 
