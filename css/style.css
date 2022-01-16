@@ -4,6 +4,7 @@
   --darkest-blue: hsl(217, 54%, 11%);
   --light-blue: hsl(215, 51%, 70%);
   --cyan: hsl(178, 100%, 50%);
+  --cyan-overlay: hsla(178, 100%, 50%, 0.5);
   --white: hsl(0, 0%, 100%);
 }
 
@@ -28,24 +29,33 @@ main {
   max-width: 320px;
   border-radius: 1rem;
   background-color: var(--darker-blue);
+  box-shadow: 1px 1px 40px 2px var(--darker-blue);
   padding: 1.5rem;
 }
 
 .card__img-container {
   border-radius: .5rem;
   overflow: hidden;
+  position: relative
 }
 
-.card__img-container:hover{
-  background-image: url('../assets/images/icon-view.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--cyan);
+.card__img-overlay-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity ease-in 0.3s;
+  background-color: var(--cyan-overlay);
+}
+
+.card__img-overlay-container:hover {
+  opacity: 1;
   cursor: pointer;
-}
-
-.card__img:hover {
-  opacity: .4;
 }
 
 .card__heading {
