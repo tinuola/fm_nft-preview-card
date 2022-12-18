@@ -13,7 +13,7 @@ Users should be able to:
 
 ### Solution
 
-Live Site: [tinuola.github.io/fm-nft-preview-card/](tinuola.github.io/fm-nft-preview-card/)
+Live Site: [tinuola.github.io/fm_nft-preview-card/](tinuola.github.io/fm_nft-preview-card/)
 
 ### Tools
 
