@@ -168,12 +168,12 @@ footer {
 }
 
 .fm-attribution {
-  color: var(--light-blue);
   font-size: 0.75rem;
   letter-spacing: 1px;
   text-align: center;
 }
 
+.fm-attribution,
 .fm-attribution a {
   color: var(--white);
 }
